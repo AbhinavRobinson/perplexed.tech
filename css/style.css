@@ -6,7 +6,6 @@
 }
 
 html{
-
 }
 
 body{
@@ -16,22 +15,29 @@ body{
     width: 100%;
 }
 
+body section{
+    overflow: hidden;
+}
+
 body section.top{
     overflow: hidden;
-    background: url("../assets/left-hero.jpg") no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 body section.top .container{
-    background-color: rgba(0, 47, 255, 0.356);
+    background: url("../assets/left-hero.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
     overflow: hidden;
     width: 100vw;
+    margin: 0 auto;
+}
+
+body section.top .wrapper{
+    height: 100vh;
     padding-left: 10vw;
     padding-right: 10vw;
-    margin: 0 auto;
-    height: 100vh;
+    background-color: rgba(0, 47, 255, 0.356);
 }
 
 body section.top .container nav{
@@ -49,13 +55,11 @@ body section.top .container nav .logo{
 }
 
 body section.top .container nav .menu{
-    /* float: right; */
 }
 
 body section.top .container nav .menu ul{
     list-style-type: none;
     display: flex;
-    /* padding: 10px 10px; */
 }
 
 body section.top .container nav .menu ul li{
@@ -73,7 +77,6 @@ body section.top .container nav .menu a{
 
 body section.top .container main{
     height: 72.5vh;
-    /* top: 50%; */
 }
 
 body section.top .container main .heading{
@@ -91,21 +94,15 @@ body section.top .container main .quote{
     line-height: 5em;
     padding-top: 2.5vh;
     padding-left: 1.5vw;
-    /* top: 50%; */
 }
 
 body section.top .container main .credits{
     transform: translateY(50%);
     line-height: 2em;
-    padding-left: 30vw;
-    /* float: right; */
-    /* padding-top: 5vh; */
-    /* padding-left: 1.5vw; */
-    /* top: 50%; */
+    padding-left: 22.5vw;
 }
 
 body section.top .container footer{
-    /* float: left; */
 }
 
 body section.top .container footer .social{
@@ -126,4 +123,56 @@ body section.top .container footer .message .mess1{
 body section.top .container footer .message .mess2{
     float: left;
     margin-left: 12.5vw;
+}
+
+
+
+/* TOP-RIGHT */
+
+
+
+
+body section.top-right .container{
+    background: url("../assets/right-hero.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+body section.top-right .container .wrapper{
+    height: 100vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: rgba(77, 0, 13, 0.555);
+}
+
+body section.top-right .container main{
+    height: 100vh;
+    float: right;
+}
+
+body section.top-right .container main .heading{
+    font-size: 11vh;
+    padding-top: 7.5vh;
+    line-height: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    transform:translateY(50%);
+}
+
+body section.top-right .container main .quote{
+    transform: translateY(50%);
+    line-height: 5em;
+    padding-top: 2.5vh;
+    padding-left: 11vw;
+}
+
+body section.top-right .container main .credits{
+    transform: translateY(50%);
+    line-height: 2em;
+    padding-left: 45vw;
 }
