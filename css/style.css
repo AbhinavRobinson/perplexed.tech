@@ -77,7 +77,7 @@ body section.top .container main{
 }
 
 body section.top .container main .heading{
-    font-size: 10vh;
+    font-size: 11vh;
     padding-top: 7.5vh;
     line-height: 2em;
     font-weight: 900;
@@ -91,6 +91,16 @@ body section.top .container main .quote{
     line-height: 5em;
     padding-top: 2.5vh;
     padding-left: 1.5vw;
+    /* top: 50%; */
+}
+
+body section.top .container main .credits{
+    transform: translateY(50%);
+    line-height: 2em;
+    padding-left: 30vw;
+    /* float: right; */
+    /* padding-top: 5vh; */
+    /* padding-left: 1.5vw; */
     /* top: 50%; */
 }
 
